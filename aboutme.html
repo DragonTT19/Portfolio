@@ -72,3 +72,311 @@ ul {
 <a style="font-size:300%;" href="https://www.youtube.com/playlist?list=PLUJHgpHS7xe4DU-on7_HpI5VEjcPZXaUw"><center>Check Out Some Awesome Beats </center></a>
 </body>
 </html
+
+   random_numbers = [29, 68, 69, 30, 20, 91, 62, 28, 36, 67, 40, 71, 71, 82, 71, 84, 96, 34, 40, 92, 57, 56, 86, 63, 88, 79, 48, 22, 12, 74,
+86, 54, 94, 19, 73, 25, 23, 72, 74, 56, 53, 52, 55, 10, 37, 48, 82, 84, 57, 45, 85, 48, 58, 56, 95, 21, 47, 98, 71, 38, 24, 51, 28, 71,
+52, 33, 78, 78, 77, 24,17, 31, 85, 87, 86, 63, 23, 73, 40, 64, 35, 29, 10, 43, 99, 38, 63, 61, 76, 91, 64, 48, 23, 26, 19, 21, 17, 49, 15, 62]
+
+for number in random_numbers:
+    if number % 5 == 0:
+        print(number)
+sum = 0
+for number in random_numbers:
+    if number % 5 == 0:
+        sum += number
+    if number % 3 == 0:
+        sum += number
+print(sum)
+
+
+sum = 0
+for number in random_numbers:
+    is_prime = True
+    for factor in range(2,number):
+        if number % factor == 0:
+            is_prime = False
+    if is_prime == True:
+        sum += number
+print(sum)
+
+    from turtle import *
+import math
+
+# Name your Turtle.
+t = Turtle()
+
+# Set Up your screen and starting position.
+setup(500,300)
+x_pos = 0
+y_pos = 0
+t.setposition(x_pos, y_pos)
+
+### Write your code below:
+t.shape("turtle")
+t.speed(5)
+t.pendown()
+t.circle(50)
+t.forward(30)
+t.right(90)
+t.forward(90)
+t.right(90)
+t.forward(60)
+t.right(90)
+t.forward(90)
+t.right(90)
+t.forward(30)
+t.penup()
+t.forward(30)
+t.right(90)
+t.forward(90)
+t.right(90)
+t.forward(10)
+t.pendown()
+t.left(90)
+t.forward(100)
+t.right(90)
+for n in range(3):
+    t.forward(15)
+    t.left(90)
+t.forward(15)
+t.left(90)
+t.forward(15)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.penup()
+t.right(180)
+t.forward(10)
+t.pendown()
+t.left(90)
+t.forward(100)
+t.right(90)
+for n in range(4):
+    t.forward(15)
+    t.left(90)
+t.forward(15)
+t.right(90)
+t.forward(100)
+t.left(90)
+t.penup()
+t.forward(10)
+t.right(90)
+t.forward(75)
+t.left(90)
+t.pendown()
+t.forward(50)
+t.right(90)
+for n in range(4):
+    t.forward(15)
+    t.left(90)
+t.forward(15)
+t.right(90)
+t.forward(50)
+t.penup()
+t.forward(60)
+t.pendown()
+t.forward(50)
+for n in range(4):
+    t.forward(15)
+    t.right(90)
+t.right(90)
+t.forward(15)
+t.right(90)
+t.forward(50)
+
+
+
+
+
+
+
+
+
+
+
+
+
+exitonclick()
+
+    
+    print ("Hello! Welcome to the Haunted Mansion Game! What is your name?")
+user_input = input()
+print ("Hello " + user_input)
+start ='''
+You wake up to find your best friend missing. You have tracked him to the old abandoned
+haunted mansion. You find a sign saying Welcome you have exactly 2 hours to find your friend, or face the consequences.
+'''
+print (start)
+print ("Type 'house' to go inside or type 'backyard' to stay outside")
+Kevin = input()
+if Kevin == "backyard":
+    print("You wander around the backyard when you hear some weird noises. You turn around to find a bloodthirsty vampire!")
+    print("Type 'run' to run away or 'fight' to fight")
+    Holly = input()
+    if Holly == "run":
+        print("Don't you know anything about vampires? You can't out run them!")
+        print("You have died! Try again?")
+    elif Holly == "fight":
+        print("You notice a woden stake in the ground grab it and stab the vampire in the heart")
+        print("You continue walking and hear something crashing through the trees")
+        print("Emerging from the trees is Bigfoot")
+        print("Type 'run' to run away or 'fight' to fight")
+        Brownie = input()
+        if Brownie == "fight":
+            print("What, have you gone mad? You can't beat Bigfoot! You fool!")
+            print("You have died! Try again?")
+        elif Brownie == "run":
+            print("You sprint around the house to the front door and go inside.")
+            print("Bigfoot is screaming and upset that you got away.")
+            print("You hear banging from behind a closet door and you open it.")
+            print("Inside the closet is a brain hungry zombie!")
+            print("Type 'run' to run away or 'fight' to fight")
+            Teagan = input()
+            if Teagan == "fight":
+                print("You fool you have nothing to fight the zombie with! Don't you know zombies are slow?")
+                print("The zombie easily overpowers and kills you")
+                print("You have died! Try again?")
+            elif Teagan == "run":
+                print("I see you have a brain. Zombies are really slow. You scream slam the door and run down to the basement.")
+                print("In the basement you see two doors. The door on the left has someone screaming behind it")
+                print("Type 'scream'to open the door on the left. Type 'silent' to open the door on the right")
+                Jake = input()
+                if Jake == "scream":
+                    print("You open the door and find a girl covered in blood screaming and crying")
+                    print("She wants your help")
+                    print("Type 'help' to help the girl. Type 'run' to run away")
+                    Patrick = input()
+                    if Patrick == "help":
+                        print("You move towards the girl as you get closer she starts acting funky")
+                        print("Her eyes turn white and too late you realize it is a trap.")
+                        print("She lunges for you and grabs you. The instant she touches you, you die!")
+                        print("You have died! Try again?")
+                    elif Patrick == "run":
+                        print("Ugh you should not have gone in here in the first place! Too late you realize it is a trap!")
+                        print("She lunges for you and grabs you. The instant she touches you, you die!")
+                        print("You have died! Try again?")
+                elif Jake == "silent":
+                    print("You open the door on your right and find nothing except a heavy sword.")
+                    print("Type 'grab' to pick up the sword. Type 'leave' to leave the sword")
+                    Nina = input()
+                    if Nina == "grab":
+                        print("You reach down, grab the sword, leave the room and walk down the hall.")
+                        print("At the end of the hall you notice a giant door and you open it")
+                        print("Inside the door you find Hunter lying on the ground.")
+                        print("You rush over to him but guarding him is a giant mountain troll!")
+                        print("Type 'fight' to fight the troll or 'run' to run away.")
+                        Ale = input()
+                        if Ale == "run":
+                            print("Seriously? What is wrong with you? You just left your best friend to die! You MONSTER!!")
+                            print("The troll is surprisingly fast and he grabs you and eats you for dinner")
+                            print("You have died! Try again?")
+                        elif Ale == "fight":
+                            print("You charge the troll and stab him in the heart. He dies")
+                            print("You rush over and untie Hunter. He is grateful and the two of you run outside the house never to return again")
+                            print("Or will you??")
+                    elif Nina == "leave":
+                        print("You decide eh I don't want the sword. I won't need it. You exit the room and walk down the hall.")
+                        print("At the end of the hall you notice a giant door and you open it")
+                        print("Inside the door you find Hunter lying on the ground.")
+                        print("You rush over to him but guarding him is a giant mountain troll!")
+                        print("Type 'fight' to fight the troll or 'run' to run away.")
+                        Manuel = input()
+                        if Manuel == "run":
+                            print("Seriously? What is wrong with you? You just left your best friend to die! You MONSTER!!")
+                            print("The troll is surprisingly fast and he grabs you and eats you for dinner")
+                            print("You have died! Try again?")
+                        elif Manuel == "fight":
+                            print("Come on! You can't fight a moutain troll without a weapon!")
+                            print("You have died! Try again?")
+
+                        Ale = input()
+                        if Ale == "run":
+                            print("Seriously? What is wrong with you? You just left your best friend to die! You MONSTER!!")
+                            print("The troll is surprisingly fast and he grabs you and eats you for dinner")
+                            print("You have died! Try again?")
+                        elif Ale == "fight":
+                            print("You charge the troll and stab him in the heart. He dies")
+                            print("You rush over and untie Hunter. He is grateful and the two of you run outside the house never to return again")
+                            print("Or will you??")
+
+
+elif Kevin == "house":
+    print("You decide to go into the house and hear banging from behind a closet door and you open it.")
+    print("Inside the closet is a brain hungry zombie!")
+    print("Type 'run' to run away or 'fight' to fight")
+    Teagan = input()
+    if Teagan == "fight":
+        print("You fool you have nothing to fight the zombie with! Don't you know zombies are slow?")
+        print("The zombie easily overpowers and kills you")
+        print("You have died! Try again?")
+    elif Teagan == "run":
+        print("I see you have a brain. Zombies are really slow. You scream slam the door and run down to the basement.")
+        print("In the basement you see two doors. The door on the left has someone screaming behind it")
+        print("Type 'scream'to open the door on the left. Type 'silent' to open the door on the right")
+        Jake = input()
+        if Jake == "scream":
+            print("You open the door and find a girl covered in blood screaming and crying")
+            print("She wants your help")
+            print("Type 'help' to help the girl. Type 'run' to run away")
+            Patrick = input()
+            if Patrick == "help":
+                print("You move towards the girl as you get closer she starts acting funky")
+                print("Her eyes turn white and too late you realize it is a trap.")
+                print("She lunges for you and grabs you. The instant she touches you, you die!")
+                print("You have died! Try again?")
+            elif Patrick == "run":
+                print("Ugh you should not have gone in here in the first place! Too late you realize it is a trap!")
+                print("She lunges for you and grabs you. The instant she touches you, you die!")
+                print("You have died! Try again?")
+        elif Jake == "silent":
+            print("You open the door on your right and find nothing except a heavy sword.")
+            print("Type 'grab' to pick up the sword. Type 'leave' to leave the sword")
+            Nina = input()
+            if Nina == "grab":
+                print("You reach down, grab the sword, leave the room and walk down the hall.")
+                print("At the end of the hall you notice a giant door and you open it")
+                print("Inside the door you find Hunter lying on the ground.")
+                print("You rush over to him but guarding him is a giant mountain troll!")
+                print("Type 'fight' to fight the troll or 'run' to run away.")
+                Manuel = input()
+                if Manuel == "run":
+                    print("Seriously? What is wrong with you? You just left your best friend to die! You MONSTER!!")
+                    print("The troll is surprisingly fast and he grabs you and eats you for dinner")
+                    print("You have died! Try again?")
+                elif Manuel == "fight":
+                    print("Come on! You can't fight a moutain troll without a weapon!")
+                    print("You have died! Try again?")
+
+                Ale = input()
+                if Ale == "run":
+                    print("Seriously? What is wrong with you? You just left your best friend to die! You MONSTER!!")
+                    print("The troll is surprisingly fast and he grabs you and eats you for dinner")
+                    print("You have died! Try again?")
+                elif Ale == "fight":
+                    print("You charge the troll and stab him in the heart. He dies")
+                    print("You rush over and untie Hunter. He is grateful and the two of you run outside the house never to return again")
+                    print("Or will you??")
+            elif Nina == "leave":
+                print("You decide eh I don't want the sword. I won't need it. You exit the room and walk down the hall.")
+                print("At the end of the hall you notice a giant door and you open it")
+                print("Inside the door you find Hunter lying on the ground.")
+                print("You rush over to him but guarding him is a giant mountain troll!")
+                print("Type 'fight' to fight the troll or 'run' to run away.")
+                Manuel = input()
+                if Manuel == "run":
+                    print("Seriously? What is wrong with you? You just left your best friend to die! You MONSTER!!")
+                    print("The troll is surprisingly fast and he grabs you and eats you for dinner")
+                    print("You have died! Try again?")
+                elif Manuel == "fight":
+                    print("Come on! You can't fight a moutain troll without a weapon!")
+                    print("You have died! Try again?")
+
+                Ale = input()
+                if Ale == "run":
+                    print("Seriously? What is wrong with you? You just left your best friend to die! You MONSTER!!")
+                    print("The troll is surprisingly fast and he grabs you and eats you for dinner")
+                    print("You have died! Try again?")
+                elif Ale == "fight":
+                    print("You charge the troll and stab him in the heart. He dies")
+                    print("You rush over and untie Hunter. He is grateful and the two of you run outside the house never to return again")
+                    print("Or will you??")
