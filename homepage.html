@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Teagan's World</title>
+<html lang="en-US">
+<link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<style>
+img {
+    display: block;
+    margin: 0 auto;
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+ul {
+    list-style-position: inside;
+}
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FF0000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #333;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body style="background-color:black;">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About Me</a>
+  <a href="#">Girls Who Code</a>
+  <a href="#">Entertainment</a>
+  <a href="#">Travel</a>
+
+</div>
+
+<div id="main">
+  <span style="color: white; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<h1 style="font-family: 'Fontdiner Swanky', cursive; color:white;font-size:700%;text-align:center;">Teagan Browne</h1>
+<img src="Teagan.JPG" width="580" class="rotateimg90"/> 
+<h1 style="color:white;font-family:courier; font-size: 600%; text-align:center;"> Awesome Quote! </h1>
+<p style="color:white;font-family: 'Coming Soon', cursive; font-size:250%;text-align:center;">"Don't be so cool you can't cry Don't be so smart you can't wonder Don't be so set on your sunny days that you can't love the roll of thunder" </p>
+</body>
+</html>
