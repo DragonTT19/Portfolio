@@ -34,9 +34,6 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
-ul {
-    list-style-position: inside;
-}
 .sidenav {
     height: 100%;
     width: 0;
@@ -75,29 +72,6 @@ ul {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #black;
-}
-li {
-    float: left;
-}
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: CB09FF;
-}
-li.dropdown {
-    display: inline-block;
-}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -117,9 +91,16 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+body {
+    background: url(dylan-gianlanella-45728.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 </style>
 </head>
-<body style="background-color:black;">
+<body>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Home</a>
@@ -159,28 +140,47 @@ function closeNav() {
 <h1 style="font-family:courier; color: white; font-size:600%; text-align:center;">Bio</h1>
 <p style="font-family: 'Kaushan Script', cursive; color: white; font-size: 200%; text-align: center;"> Hi my name is Teagan Browne. I'm 15 years old and I will be a junior at Hillsdale High School in the fall. I have coding experience from Girls Who Code Summer Immersion program. I know HTML and I'm learning Python. I love learning and challenges. I'm extremely curious, loud, and I love interacting with people! 
 <h1 style="font-family:courier; color: white; font-size:600%; text-align:center;">Fun Facts</h1>
-<ul style="color:white; font-family: 'Coming Soon', cursive;  font-size:250%;"> <center>
+<ul style="color:white; font-family: 'Coming Soon', cursive;  font-size:250%; text-align: center; list-style-type:none">
+
  <li>I can fly a plane.</li>
+
  <li>I fell down three different flights of steps.</li>
+
  <li>I'm really clumsy, but I have never broken any bones.</li>
+
  <li>I've traveled to Italy, Greece, and England.</li>
-</center></ul>
+
+</ul>
 <h1 style="font-family: courier; color: white; font-size: 600%; text-align:center;">Likes</h1>
-<ul style="font-family: 'Patrick Hand SC', cursive; color: white; font-size:400%; text-align:center;"> 
+
+<ul type="1" style="font-family: 'Patrick Hand SC', cursive; color: white; font-size:400%; text-align: center; list-style-type:none"> 
+
 <li>Hanging out with friends and being lazy</li>
+
 <li>Acting and singing</li>
+
 <li>Traveling</li>
-<li>Coding! (Duh I made this website!)</li>
+
+<li>Coding!(Duh I made this website XD)</li>
+
 <li>Videogames!</li>
+
 <li>Music</li>
+
 </ul>
+
 <h1 style="font-family:courier; color: white; font-size:600%; text-align:center;">Dislikes</h1>
-<ul style="color:white; font-family: 'Indie Flower', cursive; font-size:400%;text-align:center;">
+<ul type="1" style="color:white; font-family: 'Indie Flower', cursive; font-size:400%; text-align: center; list-style-type:none">
+
 <li>Things that are annoying </li>
+
 <li>Homework </li>
+
 <li>Running </li>
+
 <li>Techno Music</li>
+
 </ul>
-<a style="font-size:300%;" href="https://www.youtube.com/playlist?list=PLUJHgpHS7xe4DU-on7_HpI5VEjcPZXaUw"><center>Check Out Some Awesome Beats </center></a>
+<a style="font-size:300%;" href="https://www.youtube.com/playlist?list=PLUJHgpHS7xe4DU-on7_HpI5VEjcPZXaUw"><center>Check Out Some Awesome Beats</a>
 </body>
 </html>
