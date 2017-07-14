@@ -49,7 +49,6 @@ ul {
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -58,11 +57,9 @@ ul {
     display: block;
     transition: 0.3s;
 }
-
 .sidenav a:hover, .offcanvas a:focus{
     color: #333;
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -70,12 +67,10 @@ ul {
     font-size: 36px;
     margin-left: 50px;
 }
-
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -85,13 +80,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #black;
 }
-
 li {
     float: left;
 }
-
 li a, .dropbtn {
     display: inline-block;
     color: white;
@@ -99,15 +92,12 @@ li a, .dropbtn {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: CB09FF;
 }
-
 li.dropdown {
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -116,17 +106,14 @@ li.dropdown {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown-content a {
-    color: black;
+    color: red;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
-
 .dropdown-content a:hover {background-color: #f1f1f1}
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -140,15 +127,19 @@ li.dropdown {
     <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Girls Who Code</a>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="#">Arduino</a>
+      <a href="#">Python</a>
     </div>
   </li>
-
-  <a href="#">Entertainment</a>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Entertainment</a>
+    <div class="dropdown-content">
+      <a href="#">Books</a>
+      <a href="#">Movies</a>
+      <a href="#">Music</a>
+    </div>
+  </li>
   <a href="#">Travel</a>
-
 </div>
 
 <div id="main">
@@ -160,34 +151,22 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
 }
-
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </li>
-</ul>
 <h1 style="font-family:courier; color: white; font-size:600%; text-align:center;">Bio</h1>
-<p style="font-family: 'Kaushan Script', cursive; color: white; font-size: 200%; text-align: center;"> Hi my name is Teagan Browne. I'm 15 years old and I will be a junior at Hillsdale High School in the fall. I have coding experience from Girls Who Code Summer Immersion program. I know HTML and I'm learning Python. I love learning and challenges. I'm extremely curious, loud, and I love interacting with people! 
+<p style="font-family: 'Kaushan Script', cursive; color: white; font-size: 200%; text-align: center;"> Hi my name is Teagan Browne. I'm 15 years old and I will be a junior at Hillsdale High School in the fall. I have coding experience from Girls Who Code Summer Immersion program. I know HTML and I'm learning Python. I love learning and challenges. I'm extremely curious, loud, and I love interacting with people!
 <h1 style="font-family:courier; color: white; font-size:600%; text-align:center;">Fun Facts</h1>
 <ul style="color:white; font-family: 'Coming Soon', cursive;  font-size:250%;text-align:center;">
  <li>I can fly a plane.</li>
  <li>I fell down three different flights of steps.</li>
  <li>I'm really clumsy, but I have never broken any bones.</li>
- <li>I've traveled to Italy, Greece, and England.</ul>
+ <li>I've traveled to Italy, Greece, and England.</li>
+</ul>
 <h1 style="font-family: courier; color: white; font-size: 600%; text-align:center;">Likes</h1>
-<ul style="font-family: 'Patrick Hand SC', cursive; color: white; font-size:400%; text-align:center;"> 
+<ul style="font-family: 'Patrick Hand SC', cursive; color: white; font-size:400%; text-align:center;">
 <li>Hanging out with friends and being lazy</li>
 <li>Acting and singing</li>
 <li>Traveling</li>
