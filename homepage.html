@@ -34,9 +34,6 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
-ul {
-    list-style-position: inside;
-}
 .rotateimg90 {
   -webkit-transform:rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -87,9 +84,52 @@ ul {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 </style>
 </head>
-<body style="background-color:black;">
+<body style="background:url(waterfall.jpg) no-repeat fixed; color: #fceaff;">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About Me</a>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Girls Who Code</a>
+    <div class="dropdown-content">
+      <a href="#">Arduino</a>
+      <a href="#">Python</a>
+    </div>
+  </li>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Entertainment</a>
+    <div class="dropdown-content">
+      <a href="#">Books</a>
+      <a href="#">Movies</a>
+      <a href="#">Music</a>
+    </div>
+  </li>
+  <a href="#">Travel</a>
+</div>
+</style>
+</head>
+<body>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Home</a>
@@ -101,7 +141,7 @@ ul {
 </div>
 
 <div id="main">
-  <span style="color: white; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 </div>
 
 <script>
@@ -115,9 +155,9 @@ function closeNav() {
     document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-<h1 style="font-family: 'Fontdiner Swanky', cursive; color:white;font-size:700%;text-align:center;">Teagan Browne</h1>
+<h1 style="font-family: 'Fontdiner Swanky', cursive; font-size:700%;text-align:center;">Teagan Browne</h1>
 <img src="Teagan.JPG" width="580" class="rotateimg90"/> 
-<h1 style="color:white;font-family:courier; font-size: 600%; text-align:center;"> Awesome Quote! </h1>
-<p style="color:white;font-family: 'Coming Soon', cursive; font-size:250%;text-align:center;">"Don't be so cool you can't cry Don't be so smart you can't wonder Don't be so set on your sunny days that you can't love the roll of thunder" </p>
+<h1 style="font-family:courier; font-size: 600%; text-align:center;"> Awesome Quote! </h1>
+<p style="font-family: 'Coming Soon', cursive; font-size:250%;text-align:center;">"Don't be so cool you can't cry Don't be so smart you can't wonder Don't be so set on your sunny days that you can't love the roll of thunder" </p>
 </body>
 </html>
